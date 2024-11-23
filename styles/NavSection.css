@@ -1,50 +1,46 @@
-header {
+.header {
     position: fixed; /* фиксируем наверху при прокрутке */
     top: 0;
     left: 0;
     width: 100%;
     z-index: 500; /* чтоб поверх остальных блоков было */
-}
-
-.background {
-    width: 100%;
     backdrop-filter: blur(20px);
 }
 
-nav {
+.navigation {
     position: sticky;
     top: 0;
     z-index: 11;
 }
 
-nav a {
+.navigation a {
     text-decoration: none;
     color: #e7e7e7;
 }
 
-nav a:hover {
+.navigation a:hover {
     color: white;
     font-weight: 700;
 }
 
-.nav-links {
+.navigation__links {
     display: flex;
     justify-content: space-between;
     padding: 2% 6%;
 }
 
-.nav-links ul li {
+.navigation__links ul li {
     list-style: none;
     display: inline-block;
     padding-right: 10px;
 }
 
-nav .fa {
+.navigation .fa {
     display: none;
 }
 
 @media (max-width: 700px) {
-    nav .fa {
+    .navigation .fa {
         display: block;
         color: white;
         margin: 10px;
@@ -52,23 +48,23 @@ nav .fa {
         cursor: pointer;
     }
 
-    .background {
+    .header {
         backdrop-filter: none;
     }
 
-    .nav-links .main-link {
+    .navigation__links .main-link {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .nav-links ul li {
+    .navigation__links ul li {
         display: block;
         text-align: left;
         padding: 5px 50px;
     }
 
-    #nav-links-sub {
+    .navigation__links-sub {
         left: -200px;
         text-align: right;
         margin-top: 70px;

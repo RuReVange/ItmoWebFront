@@ -20,12 +20,12 @@
               href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"/>
     </head>
     <body>
-        <header class="background">
-            <nav>
-                <div class="nav-links">
+        <header class="header">
+            <nav class="navigation">
+                <div class="navigation__links">
                     <i class="fa fa-bars" onclick="toggleMenu()"></i>
                     <a href="#main-section" class="main-link">The Wheels</a>
-                    <div id="nav-links-sub">
+                    <div class="navigation__links-sub">
                         <ul>
                             <li><a href="#about-us">about</a></li>
                             <li><a href="#our-products">products</a></li>
@@ -36,25 +36,24 @@
             </nav>
         </header>
         <main>
-            <section id="main-section">
+            <section class="main-section" id="main-section">
                 <div class="main-title">
-                    <div class="main-sub-container-one">
-                        <span id="title-one">RIDE</span>
+                    <div class="main-title__container-one">
+                        <span class="main-title__title-one">RIDE</span>
                     </div>
-                    <div class="main-sub-container-two">
+                    <div class="main-title__container-two">
                         <img src="resources/images/car-wheel-1.png"
-                             id="car-wheel-1"
-                             class="rotate"
+                             class="rotate container-two__car-wheel-1"
                              alt="car-wheel"
                         />
-                        <span id="title-two">IT</span>
+                        <span class="main-title__title-two">IT</span>
                     </div>
                 </div>
             </section>
-            <section id="about-us">
-                <div class="about-us-container">
-                    <div class="about-us-row">
-                        <div class="about-us-col">
+            <section class="about-us" id="about-us">
+                <div class="about-us__container">
+                    <div class="about-us__container-row">
+                        <div class="about-us__container-col">
                             <h3>Since 1998</h3>
                             <p>
                                 Since 1998, we have gone a long way from small retail outlets
@@ -62,7 +61,7 @@
                                 tire and service centers.
                             </p>
                         </div>
-                        <div class="about-us-col">
+                        <div class="about-us__container-col">
                             <h3>Unified Loyalty Program</h3>
                             <p>
                                 You can contact any The Wheel center in each of the 40 cities of
@@ -70,7 +69,7 @@
                                 loyalty program and extended warranty.
                             </p>
                         </div>
-                        <div class="about-us-col">
+                        <div class="about-us__container-col">
                             <h3>We work for you!</h3>
                             <p>
                                 The quality assurance of the services provided is ensured
@@ -82,32 +81,32 @@
                     </div>
                 </div>
             </section>
-            <section id="our-products">
-                <div class="products-grid-wrapper">
-                    <div class="products-grid-container">
-                        <div class="grid-item">
+            <section class="products" id="our-products">
+                <div class="products__grid-wrapper">
+                    <div class="products__grid-container">
+                        <div class="grid-container__item">
                             <img src="resources/images/ForgedWheel.webp" alt="" />
                             <p>Forged Wheels</p>
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-container__item">
                             <img src="resources/images/CastWheel.png" alt="" />
                             <p>Cast Wheels</p>
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-container__item">
                             <img src="resources/images/PressedMetalWheel.png" alt="" />
                             <p>Pressed Metal Wheels</p>
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-container__item">
                             <img src="resources/images/FlowFormingWheel.webp" alt="" />
                             <p>Flow Forming Wheels</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="contact">
-                <div class="contact-row">
-                    <div class="contact-col">
-                        <div class="testimonial-wrapper">
+            <section class="contact" id="contact">
+                <div class="contact__row">
+                    <div class="contact__column">
+                        <div class="column__testimonial-wrapper">
                             <p>
                                 One of the best products I've had in my life.
                             </p>
@@ -117,8 +116,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="contact-col">
-                        <div class="social-icon-wrapper">
+                    <div class="contact__column">
+                        <div class="column__social-icon-wrapper">
                             <a href="https://www.instagram.com">
                                 <img src="resources/images/instagram.png" alt=""/>
                             </a>
@@ -133,8 +132,5 @@
                 </div>
             </section>
         </main>
-        <footer>
-
-        </footer>
     </body>
 </html>
