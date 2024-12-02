@@ -1,5 +1,5 @@
 .header {
-    position: fixed; /* фиксируем наверху при прокрутке */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -40,9 +40,9 @@
 }
 
 .navigation__links ul li a.active {
-    color: #00f07f;
+    color: #c2cfc2;
     font-weight: bold;
-    border-bottom: 2px solid #00f07f;
+    border-bottom: 2px solid #c2cfc2;
 }
 
 @media (max-width: 700px) {
