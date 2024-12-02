@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('todo-form');
     const taskInput = document.getElementById('task');
     const todoList = document.getElementById('todo-list');
-    const saveButton = document.getElementById('save-tasks');
-    const loadButton = document.getElementById('load-tasks');
 
     function addTask(taskText) {
         const listItem = document.createElement('li');
@@ -36,27 +34,5 @@ document.addEventListener('DOMContentLoaded', () => {
             addTask(taskText);
             taskInput.value = '';
         }
-    });
-
-    saveButton.addEventListener('click', () => {
-        const tasks = [];
-        document.querySelectorAll('.todo__item').forEach((item) => {
-            const taskText = item.querySelector('.todo__text').textContent;
-            const isCompleted = item.querySelector('.todo__checkbox').checked;
-            tasks.push({ text: taskText, completed: isCompleted });
-        });
-        localStorage.setItem('todoTasks', JSON.stringify(tasks));
-        alert('Tasks saved!');
-    });
-
-    loadButton.addEventListener('click', () => {
-        const tasks = JSON.parse(localStorage.getItem('todoTasks')) || [];
-        todoList.innerHTML = '';
-        tasks.forEach((task) => {
-            addTask(task.text);
-            const lastItem = todoList.lastChild;
-            lastItem.querySelector('.todo__checkbox').checked = task.completed;
-        });
-        alert('Tasks loaded!');
     });
 });
