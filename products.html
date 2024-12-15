@@ -18,7 +18,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="scripts/site4.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="scripts/gallery.js" defer></script>
 </head>
 <body>
 <header class="header">
@@ -39,25 +42,36 @@
 </header>
 <main>
   <section class="products" id="our-products">
-    <div class="products__grid-wrapper">
-      <div class="products__grid-container">
-        <div class="grid-container__item">
-          <img src="resources/images/ForgedWheel.webp" alt="" />
-          <p>Forged Wheels</p>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="grid-container__item">
+            <img src="resources/images/ForgedWheel.webp" alt="Forged Wheels" />
+            <p>Forged Wheels</p>
+          </div>
         </div>
-        <div class="grid-container__item">
-          <img src="resources/images/CastWheel.png" alt="" />
-          <p>Cast Wheels</p>
+        <div class="swiper-slide">
+          <div class="grid-container__item">
+            <img src="resources/images/CastWheel.png" alt="Cast Wheels" />
+            <p>Cast Wheels</p>
+          </div>
         </div>
-        <div class="grid-container__item">
-          <img src="resources/images/PressedMetalWheel.png" alt="" />
-          <p>Pressed Metal Wheels</p>
+        <div class="swiper-slide">
+          <div class="grid-container__item">
+            <img src="resources/images/PressedMetalWheel.png" alt="Pressed Metal Wheels" />
+            <p>Pressed Metal Wheels</p>
+          </div>
         </div>
-        <div class="grid-container__item">
-          <img src="resources/images/FlowFormingWheel.webp" alt="" />
-          <p>Flow Forming Wheels</p>
+        <div class="swiper-slide">
+          <div class="grid-container__item">
+            <img src="resources/images/FlowFormingWheel.webp" alt="Flow Forming Wheels" />
+            <p>Flow Forming Wheels</p>
+          </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </section>
 </main>
